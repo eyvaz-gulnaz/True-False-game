@@ -1,0 +1,64 @@
+
+.image{
+    background-image: url("https://www.newlivetheatre.co.uk/wp-content/uploads/2014/03/Theatre-True-False-Game.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%; 
+    margin: 0 auto;
+}
+.startgame{
+    visibility: hidden;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: inherit;
+    height: inherit;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner{
+    border: rgb(26, 20, 20) 10px double;
+    width: 600px;
+    height: 500px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: gray;
+    text-align: center;
+    font-size: 1.7em;
+    opacity: 0.95;
+    padding: 1rem;
+}
+.inner p {
+    color: rgb(12, 61, 19);
+    font-weight: 700;
+    margin-top: 1.3em;
+    font-size: 1.6em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2,h3{
+    font-weight: 900;
+}
+.playagain{
+    display: none;
+    font-size: large;
+}
+.yes, .no{
+    border: gray 1px solid;
+    border-radius: 50%;
+    background-color: gray;
+}
+@media only screen and (max-width: 960px) {
+    .image {
+            width: 480px;
+            margin-top: 100px;
+            height: 520px;
+        }
+        .inner {
+            border: black 10px double;
+            width: 400px;
+            height: 440px;
+            font-size: 1.4em;
+        }
+
+}
