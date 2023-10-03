@@ -15,6 +15,7 @@ shuffleArray(question);
 var quesAmount = 0;
 var win = 0;
 var lose = 0;
+var limit = 10;    
 
 startGame.style.visibility = 'visible';
 h2.innerText = question[quesAmount][0];
@@ -23,7 +24,7 @@ window.onkeypress = function (e) {
     if (e.key === "t" || e.key === "f") {
         tap.style.display = "none";
 
-        if (quesAmount >= question.length) {
+        if (quesAmount >= limit) {
             if (win > lose) {
                 h2.innerText = "Game Over. You won";
                 inner.style.backgroundColor = 'green';
@@ -61,7 +62,7 @@ window.onkeypress = function (e) {
             wrong.innerText = lose;
             quesAmount++;
 
-            if (quesAmount < question.length) {
+            if (quesAmount < limit) {
                 h2.innerText = question[quesAmount][0];
             }
         }
